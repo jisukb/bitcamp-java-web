@@ -58,7 +58,7 @@ public class Servlet05 extends GenericServlet {
     out.println("<head><title>servlet04</title></head>");
     out.println("<body><h1>파일 업로드 결과</h1>");
 
-    // 일반 폼 데이터를 원래 하던 방식대로 값을 꺼낸다.
+    // 일반 폼 데이터를 꺼낼 때는 원래 하던 방식대로 값을 꺼낸다.
     out.printf("이름=%s<br>\n", httpReq.getParameter("name"));
     out.printf("나이=%s<br>\n", httpReq.getParameter("age"));
 
@@ -75,5 +75,5 @@ public class Servlet05 extends GenericServlet {
     }
     out.println("</body></html>");
   }
-}
+} 
 

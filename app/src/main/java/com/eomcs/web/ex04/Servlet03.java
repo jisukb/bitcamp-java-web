@@ -21,7 +21,7 @@ public class Servlet03 extends GenericServlet {
     // POST 요청으로 파일 전송하기
     // - 파일을 첨부하여 서버에 전송한다.
     // - multipart/form-data 형식으로 데이터를 전송하지 않으면
-    // 첨부 파일의 데이터는 받을 수 없다.
+    //   첨부 파일의 데이터는 받을 수 없다.
     //
     // 테스트
     // - http://localhost:8080/java-web/ex04/test03.html 실행
@@ -52,7 +52,7 @@ public class Servlet03 extends GenericServlet {
 
 // 1) GET 요청 예:
 //
-// GET /eomcs-java-web/ex04/s3?name=ABC%EA%B0%80%EA%B0%81&age=20&photo=actors.jpg HTTP/1.1
+// GET /eomcs-java-web/ex04/s3?name=AB%EA%B0%80%EA%B0%81&age=20&photo=actors.jpg HTTP/1.1
 // Host: 192.168.1.10:9999
 // Pragma: no-cache
 // Cache-Control: no-cache
@@ -112,7 +112,7 @@ public class Servlet03 extends GenericServlet {
 // ------WebKitFormBoundaryT1G23U6fYMK0zZxx
 // Content-Disposition: form-data; name="name"
 //
-// ABC가각
+// AB가각
 // ------WebKitFormBoundaryT1G23U6fYMK0zZxx
 // Content-Disposition: form-data; name="age"
 //
@@ -121,6 +121,6 @@ public class Servlet03 extends GenericServlet {
 // Content-Disposition: form-data; name="photo"; filename="actors.jpg"
 // Content-Type: image/jpeg
 //
-// ...
-
+// 바이너리데이터...
+// ------WebKitFormBoundaryT1G23U6fYMK0zZxx-
 
