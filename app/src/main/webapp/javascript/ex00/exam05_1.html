@@ -5,28 +5,16 @@
   <title>exam</title>
 </head>
 <body>
-  <h1>요점 정리 - 5.HTML 태그와 DOM 트리 객체 응용</h1>
-  <form>
-    <div id="inputNameContainer">
-    <div class="inputName">
-      <span class="name">이름1</span>: <input type="text" name="name1"><br>
-    </div>
-    </div>
-    <button id="btnAddName" type="button">추가</button><br>
-    <button id="btn1">확인</button>
-  </form>
+  <h1>요점 정리 - 5.HTML 태그와 DOM 트리 객체</h1>
+  <p id="p1">오호라!</p>
+  <button id="btn1">확인</button>
+  
 <script>
-var inputNameIndex = 1;
-var btnAddName = document.getElementById("btnAddName");
-var inputNameContainer = document.querySelector("#inputNameContainer");
-var inputNameDiv = document.querySelector(".inputName");
+var tag1 = document.getElementById("btn1");
 
-btnAddName.onclick = function() {
-	inputNameIndex++;
-	var e = inputNameDiv.cloneNode(true);
-	e.querySelector(".name").innerHTML = "이름" + inputNameIndex;
-	e.querySelector("input").name = "name" + inputNameIndex;
-	inputNameContainer.appendChild(e);
+tag1.onclick = function() { // Observer 패턴: 리스너 => 이벤트 리스너 => 콜백함수(callback; cb)
+  var tag2 = document.getElementById("p1");
+  tag2.innerHTML = "비트캠프!";
 };
 
 </script>  

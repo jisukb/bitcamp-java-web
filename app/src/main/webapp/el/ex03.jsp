@@ -17,6 +17,7 @@
 - 보관소에 저장된 값을 찾지 못하면 빈 문자열을 리턴한다.
 </pre> 
 <%
+// 세션이나 서블릿 컨텍스트 보관소에 저장된 데이터를 초기화시킨다.
 session.setAttribute("name", null);
 application.setAttribute("name", null);
 
